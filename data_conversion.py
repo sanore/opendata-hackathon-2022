@@ -2,6 +2,7 @@
 import pandas as pd
 
 from condition_score import get_condition_score
+from kostenschaetzer import cost_estimator
 
 
 def convert(inp_file, oup_file):
@@ -18,7 +19,7 @@ def convert(inp_file, oup_file):
     oup_data["Longitude"] = temp[1]
     
     # Calculate cheapness score
-    oup_data["cheapness"] = inp_data.apply(lambda x: dummy_cheapness_score(x["mietpreis"], x["Flaeche"], x["zimmer"]), axis=1)
+    oup_data["cheapness"] = inp_data.apply(lambda x: cost_estimator(x["mietpreis"], x["Flaeche"], x["zimmer"]), axis=1)
     
     # Calculate condition score
     oup_data["condition"] = inp_data.apply(lambda x: get_condition_score(x["baujahr"], x["renovation"]), axis=1)
@@ -33,16 +34,12 @@ def convert(inp_file, oup_file):
     oup_data.to_csv(oup_file, sep=';')
 
 
-def dummy_cheapness_score(price, area, room_num):
-    return int((price + area + room_num) % 10) + 1
-
-
 def dummy_location_score(latitude, longitude):
-    return int((latitude+longitude) % 10) + 1
+    return float(int((latitude+longitude) % 10) + 1)
 
 
 def get_overall_score(cheapness_score, condition_score, location_score):
-    return round(0.5*cheapness_score + 0.3*condition_score + 0.2*location_score, 1)
+    return round(0.5*cheapness_score + 0.3*condition_score + 0.2*location_score, 2)
 
 
 def latlong_from_gmaps(loc_string):
