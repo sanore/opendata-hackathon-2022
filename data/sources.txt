@@ -1,0 +1,2 @@
+Baudaten Kanton:	https://www.bfs.admin.ch/bfs/de/home/statistiken/bau-wohnungswesen/gebaeude/periode.assetdetail.23184650.html
+Baudaten Stadt:		http://stada2.sg.ch/#
