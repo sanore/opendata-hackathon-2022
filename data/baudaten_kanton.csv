@@ -1,0 +1,201 @@
+"Kanton";"Gebäudekategorie";"Anzahl Geschosse";"Anzahl Wohnungen";"Vor 1919 2021";"1919-1945 2021";"1946-1960 2021";"1961-1970 2021";"1971-1980 2021";"1981-1990 2021";"1991-2000 2021";"2001-2005 2021";"2006-2021 2021"
+"St. Gallen";"Einfamilienhäuser";"1 Gesch.";"1 Whg";216;260;490;1219;1247;436;231;157;396
+"St. Gallen";"Einfamilienhäuser";"1 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"1 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"1 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"1 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"2 Gesch.";"1 Whg";5022;2919;4996;5021;6186;5646;4810;2775;6245
+"St. Gallen";"Einfamilienhäuser";"2 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"2 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"2 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"2 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"3 Gesch.";"1 Whg";4598;1763;820;740;1601;2739;3573;994;2095
+"St. Gallen";"Einfamilienhäuser";"3 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"3 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"3 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"3 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"4 Gesch.";"1 Whg";297;71;20;23;79;139;113;27;45
+"St. Gallen";"Einfamilienhäuser";"4 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"4 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"4 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"4 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"5 Gesch.";"1 Whg";14;2;1;0;7;2;8;0;5
+"St. Gallen";"Einfamilienhäuser";"5 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"5 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"5 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"5 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"6 Gesch.";"1 Whg";0;0;0;1;0;0;0;0;2
+"St. Gallen";"Einfamilienhäuser";"6 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"6 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"6 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"6 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"7 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"7 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"7 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"7 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"7 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"8 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"8 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"8 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"8 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"8 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"9 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"9 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"9 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"9 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"9 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"10+ Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"10+ Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"10+ Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"10+ Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Einfamilienhäuser";"10+ Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"1 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"1 Gesch.";"2 Whg";11;10;7;29;25;15;6;2;9
+"St. Gallen";"Mehrfamilienhäuser";"1 Gesch.";"3-5 Whg";3;1;1;4;5;15;0;5;4
+"St. Gallen";"Mehrfamilienhäuser";"1 Gesch.";"6-9 Whg";0;1;0;0;1;0;0;4;0
+"St. Gallen";"Mehrfamilienhäuser";"1 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"2 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"2 Gesch.";"2 Whg";645;363;373;450;560;408;245;88;427
+"St. Gallen";"Mehrfamilienhäuser";"2 Gesch.";"3-5 Whg";102;84;104;73;72;58;41;14;208
+"St. Gallen";"Mehrfamilienhäuser";"2 Gesch.";"6-9 Whg";7;1;11;14;9;7;8;1;44
+"St. Gallen";"Mehrfamilienhäuser";"2 Gesch.";"10+ Whg";0;0;0;1;0;4;1;0;8
+"St. Gallen";"Mehrfamilienhäuser";"3 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"3 Gesch.";"2 Whg";1766;779;280;248;362;416;401;88;334
+"St. Gallen";"Mehrfamilienhäuser";"3 Gesch.";"3-5 Whg";1038;630;231;191;218;253;318;104;717
+"St. Gallen";"Mehrfamilienhäuser";"3 Gesch.";"6-9 Whg";63;74;426;420;235;222;278;64;621
+"St. Gallen";"Mehrfamilienhäuser";"3 Gesch.";"10+ Whg";3;4;17;45;24;40;47;7;171
+"St. Gallen";"Mehrfamilienhäuser";"4 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"4 Gesch.";"2 Whg";184;51;15;7;9;23;64;7;10
+"St. Gallen";"Mehrfamilienhäuser";"4 Gesch.";"3-5 Whg";1037;415;107;65;124;151;143;60;256
+"St. Gallen";"Mehrfamilienhäuser";"4 Gesch.";"6-9 Whg";166;86;349;692;468;445;447;191;657
+"St. Gallen";"Mehrfamilienhäuser";"4 Gesch.";"10+ Whg";33;22;86;236;243;227;176;43;553
+"St. Gallen";"Mehrfamilienhäuser";"5 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"5 Gesch.";"2 Whg";12;6;0;0;1;2;1;0;2
+"St. Gallen";"Mehrfamilienhäuser";"5 Gesch.";"3-5 Whg";384;111;11;9;8;12;24;12;31
+"St. Gallen";"Mehrfamilienhäuser";"5 Gesch.";"6-9 Whg";163;51;31;152;149;120;116;61;146
+"St. Gallen";"Mehrfamilienhäuser";"5 Gesch.";"10+ Whg";97;44;58;145;185;113;130;41;299
+"St. Gallen";"Mehrfamilienhäuser";"6 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"6 Gesch.";"2 Whg";1;0;0;0;1;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"6 Gesch.";"3-5 Whg";42;4;4;3;1;4;3;1;7
+"St. Gallen";"Mehrfamilienhäuser";"6 Gesch.";"6-9 Whg";70;10;7;19;12;13;7;3;14
+"St. Gallen";"Mehrfamilienhäuser";"6 Gesch.";"10+ Whg";48;10;20;52;78;46;30;10;89
+"St. Gallen";"Mehrfamilienhäuser";"7 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"7 Gesch.";"2 Whg";1;0;1;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"7 Gesch.";"3-5 Whg";1;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"7 Gesch.";"6-9 Whg";4;1;0;3;3;1;0;0;1
+"St. Gallen";"Mehrfamilienhäuser";"7 Gesch.";"10+ Whg";5;2;5;23;27;7;9;6;5
+"St. Gallen";"Mehrfamilienhäuser";"8 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"8 Gesch.";"2 Whg";1;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"8 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"8 Gesch.";"6-9 Whg";0;0;0;0;0;2;1;0;0
+"St. Gallen";"Mehrfamilienhäuser";"8 Gesch.";"10+ Whg";0;0;1;7;19;2;3;0;5
+"St. Gallen";"Mehrfamilienhäuser";"9 Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"9 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"9 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"9 Gesch.";"6-9 Whg";0;0;0;2;0;1;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"9 Gesch.";"10+ Whg";0;0;2;10;15;2;1;0;0
+"St. Gallen";"Mehrfamilienhäuser";"10+ Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"10+ Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"10+ Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Mehrfamilienhäuser";"10+ Gesch.";"6-9 Whg";0;0;0;0;0;0;1;0;0
+"St. Gallen";"Mehrfamilienhäuser";"10+ Gesch.";"10+ Whg";1;0;1;27;44;2;1;0;2
+"St. Gallen";"Wohngebäude mit Nebennutzung";"1 Gesch.";"1 Whg";65;44;20;58;41;20;12;5;14
+"St. Gallen";"Wohngebäude mit Nebennutzung";"1 Gesch.";"2 Whg";3;1;1;0;4;1;1;0;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"1 Gesch.";"3-5 Whg";0;0;0;0;1;1;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"1 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"1 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"2 Gesch.";"1 Whg";1327;462;251;276;280;281;200;35;88
+"St. Gallen";"Wohngebäude mit Nebennutzung";"2 Gesch.";"2 Whg";207;69;62;65;80;48;52;13;24
+"St. Gallen";"Wohngebäude mit Nebennutzung";"2 Gesch.";"3-5 Whg";26;21;10;12;10;3;6;0;11
+"St. Gallen";"Wohngebäude mit Nebennutzung";"2 Gesch.";"6-9 Whg";2;0;1;1;1;0;0;0;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"2 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"3 Gesch.";"1 Whg";1591;416;139;95;112;161;155;18;51
+"St. Gallen";"Wohngebäude mit Nebennutzung";"3 Gesch.";"2 Whg";703;311;92;61;72;92;82;9;23
+"St. Gallen";"Wohngebäude mit Nebennutzung";"3 Gesch.";"3-5 Whg";269;156;62;50;39;64;53;7;41
+"St. Gallen";"Wohngebäude mit Nebennutzung";"3 Gesch.";"6-9 Whg";22;23;31;40;12;16;24;4;21
+"St. Gallen";"Wohngebäude mit Nebennutzung";"3 Gesch.";"10+ Whg";3;3;3;3;1;2;7;0;11
+"St. Gallen";"Wohngebäude mit Nebennutzung";"4 Gesch.";"1 Whg";185;44;11;7;8;16;15;2;6
+"St. Gallen";"Wohngebäude mit Nebennutzung";"4 Gesch.";"2 Whg";131;53;11;5;9;9;14;1;3
+"St. Gallen";"Wohngebäude mit Nebennutzung";"4 Gesch.";"3-5 Whg";387;181;40;30;24;49;45;13;34
+"St. Gallen";"Wohngebäude mit Nebennutzung";"4 Gesch.";"6-9 Whg";81;26;41;51;49;69;50;12;41
+"St. Gallen";"Wohngebäude mit Nebennutzung";"4 Gesch.";"10+ Whg";16;7;19;19;16;16;27;4;51
+"St. Gallen";"Wohngebäude mit Nebennutzung";"5 Gesch.";"1 Whg";20;3;0;2;1;0;2;1;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"5 Gesch.";"2 Whg";20;5;1;0;1;2;1;0;3
+"St. Gallen";"Wohngebäude mit Nebennutzung";"5 Gesch.";"3-5 Whg";171;47;8;8;5;17;11;3;2
+"St. Gallen";"Wohngebäude mit Nebennutzung";"5 Gesch.";"6-9 Whg";93;34;13;32;20;30;17;7;9
+"St. Gallen";"Wohngebäude mit Nebennutzung";"5 Gesch.";"10+ Whg";14;17;20;27;25;38;22;2;39
+"St. Gallen";"Wohngebäude mit Nebennutzung";"6 Gesch.";"1 Whg";3;5;0;0;0;0;0;0;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"6 Gesch.";"2 Whg";2;2;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"6 Gesch.";"3-5 Whg";59;14;2;2;0;3;3;0;2
+"St. Gallen";"Wohngebäude mit Nebennutzung";"6 Gesch.";"6-9 Whg";41;5;3;4;6;12;8;0;3
+"St. Gallen";"Wohngebäude mit Nebennutzung";"6 Gesch.";"10+ Whg";40;6;9;19;13;16;14;2;5
+"St. Gallen";"Wohngebäude mit Nebennutzung";"7 Gesch.";"1 Whg";3;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"7 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"7 Gesch.";"3-5 Whg";5;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"7 Gesch.";"6-9 Whg";7;0;1;0;1;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"7 Gesch.";"10+ Whg";8;0;6;9;4;1;7;0;4
+"St. Gallen";"Wohngebäude mit Nebennutzung";"8 Gesch.";"1 Whg";0;0;0;0;0;1;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"8 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"8 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"8 Gesch.";"6-9 Whg";0;0;0;0;2;0;3;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"8 Gesch.";"10+ Whg";0;0;0;1;4;0;1;0;3
+"St. Gallen";"Wohngebäude mit Nebennutzung";"9 Gesch.";"1 Whg";2;1;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"9 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"9 Gesch.";"3-5 Whg";0;0;0;0;0;1;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"9 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"9 Gesch.";"10+ Whg";0;0;0;1;1;0;1;1;1
+"St. Gallen";"Wohngebäude mit Nebennutzung";"10+ Gesch.";"1 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"10+ Gesch.";"2 Whg";1;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"10+ Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"10+ Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Wohngebäude mit Nebennutzung";"10+ Gesch.";"10+ Whg";1;0;4;5;7;0;0;0;3
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"1 Gesch.";"1 Whg";55;80;45;65;35;14;14;7;23
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"1 Gesch.";"2 Whg";1;3;5;1;0;2;1;0;2
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"1 Gesch.";"3-5 Whg";0;2;0;0;2;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"1 Gesch.";"6-9 Whg";0;0;0;0;1;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"1 Gesch.";"10+ Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"2 Gesch.";"1 Whg";314;279;191;207;172;163;123;29;105
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"2 Gesch.";"2 Whg";32;30;13;35;25;28;16;6;17
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"2 Gesch.";"3-5 Whg";9;11;4;12;8;7;8;0;5
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"2 Gesch.";"6-9 Whg";0;1;1;0;1;0;0;0;1
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"2 Gesch.";"10+ Whg";0;0;0;0;0;0;1;0;1
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"3 Gesch.";"1 Whg";475;231;105;87;101;101;66;6;43
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"3 Gesch.";"2 Whg";182;101;34;39;33;51;18;5;15
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"3 Gesch.";"3-5 Whg";92;71;28;22;18;27;13;5;12
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"3 Gesch.";"6-9 Whg";13;4;5;4;10;6;3;2;7
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"3 Gesch.";"10+ Whg";2;1;0;0;2;0;0;0;7
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"4 Gesch.";"1 Whg";215;71;28;29;46;48;19;5;15
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"4 Gesch.";"2 Whg";92;52;9;7;18;18;20;3;8
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"4 Gesch.";"3-5 Whg";134;63;15;17;14;19;30;3;12
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"4 Gesch.";"6-9 Whg";20;10;13;12;13;17;14;0;6
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"4 Gesch.";"10+ Whg";1;3;1;7;7;7;5;2;5
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"5 Gesch.";"1 Whg";85;23;5;11;14;18;12;0;6
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"5 Gesch.";"2 Whg";32;7;1;3;3;5;1;0;2
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"5 Gesch.";"3-5 Whg";65;21;6;7;4;7;8;1;3
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"5 Gesch.";"6-9 Whg";25;5;3;6;9;4;4;0;3
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"5 Gesch.";"10+ Whg";6;3;2;8;5;5;2;0;10
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"6 Gesch.";"1 Whg";20;5;9;10;6;6;1;0;1
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"6 Gesch.";"2 Whg";17;0;4;2;1;3;3;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"6 Gesch.";"3-5 Whg";24;3;1;1;1;6;2;1;1
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"6 Gesch.";"6-9 Whg";12;3;2;2;2;1;1;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"6 Gesch.";"10+ Whg";2;3;1;1;2;1;2;0;2
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"7 Gesch.";"1 Whg";5;0;5;1;2;2;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"7 Gesch.";"2 Whg";1;1;2;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"7 Gesch.";"3-5 Whg";7;0;0;2;1;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"7 Gesch.";"6-9 Whg";3;1;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"7 Gesch.";"10+ Whg";0;1;0;3;2;1;0;0;2
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"8 Gesch.";"1 Whg";1;1;0;1;1;0;0;0;2
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"8 Gesch.";"2 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"8 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"8 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"8 Gesch.";"10+ Whg";0;0;1;0;0;0;0;0;1
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"9 Gesch.";"1 Whg";0;1;1;0;1;1;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"9 Gesch.";"2 Whg";0;1;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"9 Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"9 Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"9 Gesch.";"10+ Whg";0;0;1;0;0;1;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"10+ Gesch.";"1 Whg";0;0;0;1;2;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"10+ Gesch.";"2 Whg";0;0;0;0;1;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"10+ Gesch.";"3-5 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"10+ Gesch.";"6-9 Whg";0;0;0;0;0;0;0;0;0
+"St. Gallen";"Gebäude mit teilweiser Wohnnutzung";"10+ Gesch.";"10+ Whg";0;0;0;2;1;0;0;0;1
