@@ -1,2 +1,7 @@
-id;Latitude;Longitude;baujahr;zimmer;mietpreis;detailsUrl
+id;Latitude Longitude;baujahr;renovation;zimmer;Flaeche;Stockwerk;mietpreis;detailsUrl
 47°26'07.9"N 9°24'04.6"E
+1;"47°26'17.1"N 9°24'12.5"E";   ;2022   ;2.5    ;47 ;0;1335;"https://www.immoscout24.ch/de/d/wohnung-mieten-st-gallen/7341084"
+2;"47°26'17.1"N 9°24'12.5"E";   ;2022   ;2.5    ;82 ;0;1985;"https://www.immoscout24.ch/de/d/wohnung-mieten-st-gallen/7341080"
+3;"47°26'36.0"N 9°24'33.7"E";1995;      ;3.5    ;92 ;5;1620;"https://www.immoscout24.ch/de/d/wohnung-mieten-st-gallen/7383561"
+4;"47°26'09.8"N 9°24'29.9"E";1955;      ;3      ;54 ;3;850;"https://www.immoscout24.ch/de/d/wohnung-mieten-st-gallen/7395039"
+5;"47°25'28.4"N 9°22'35.6"E";1941;      ;3.5    ;126;2;2600;"https://www.immoscout24.ch/de/d/duplex--maisonette-wohnung-mieten-st-gallen/7394344"
