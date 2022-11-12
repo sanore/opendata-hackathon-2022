@@ -11,7 +11,7 @@ def get_condition_score(constr_year, renov_year):
         renov_year = int(renov_year)
     
     # Read and extract construction year data of the city
-    city_data = pd.read_csv("data/baujahr.csv", sep=';', usecols=['INDIKATOR_NAME', 'INDIKATOR_JAHR', 'INDIKATOR_VALUE'], encoding='utf-8')
+    city_data = pd.read_csv("data/baujahr.csv", sep=';', usecols=['INDIKATOR_NAME', 'INDIKATOR_JAHR', 'INDIKATOR_VALUE'], encoding='latin1')
     city_data.columns = ['built_after', 'jahr', 'value']
     city_data['built_after'] = city_data['built_after'].str[-8:-4]
     city_data = city_data[city_data['jahr']==city_data['jahr'].max()]
@@ -20,7 +20,7 @@ def get_condition_score(constr_year, renov_year):
     
     # Read and extract data of canton
     canton_columns = ["Vor 1919 2021", "1919-1945 2021", "1946-1960 2021", "1961-1970 2021", "1971-1980 2021", "1981-1990 2021", "1991-2000 2021", "2001-2005 2021", "2006-2021 2021"]
-    canton_data = pd.read_csv("data/baudaten_kanton.csv", sep=';', usecols=canton_columns, encoding='utf-8')
+    canton_data = pd.read_csv("data/baudaten_kanton.csv", sep=';', usecols=canton_columns, encoding='latin1')
     column_sums = canton_data.sum().to_numpy()
     # Adjust for mismatched years (linear interpolation)
     column_sums[-1], column_sums[-2] = int(column_sums[-1]*10/15), column_sums[-2] + int(column_sums[-1]*5/15)

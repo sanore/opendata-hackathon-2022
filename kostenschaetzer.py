@@ -5,7 +5,7 @@ MIETPREIS = './data/mietpreise.csv'
 
 
 def cost_estimator(mietpreis, flaeche, zimmer, max_score=10):
-    frame = pd.read_csv(MIETPREIS, encoding="utf-8", delimiter=';')
+    frame = pd.read_csv(MIETPREIS, encoding="latin1", delimiter=';')
     
     try:
         bottom, estimate, top = __price(frame, int(float(zimmer)))
