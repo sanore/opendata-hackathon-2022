@@ -1,2 +1,2 @@
-id;Latitude;Longitude;baujahr;zimmer;mietpreis;detailsUrl
-47°26'07.9"N 9°24'04.6"E
+id;lat_long_string;baujahr;zimmer;quadratmeter;mietpreis;detailsUrl
+45646544;47°26'07.9"N 9°24'04.6"E;2021;1;42;1070;https://www.immoscout24.ch/de/d/wohnung-mieten-st-gallen/7402004
