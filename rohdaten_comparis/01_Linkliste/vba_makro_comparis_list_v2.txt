@@ -1,0 +1,72 @@
+Option Explicit
+Public Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr)
+
+Sub iterate_html()
+    Dim base_url As String
+    Dim file_path As String
+    Dim i As Integer
+    Dim base_file_path As String
+    Dim url As String
+    Dim content As String
+    
+    Application.StatusBar = Now & ": The adventure starts"
+    Debug.Print Now & ": The adventure starts"
+    
+    base_url = "https://www.comparis.ch/immobilien/result/list?requestobject=%7B%22DealType%22%3A10%2C%22SiteId%22%3A0%2C%22RootPropertyTypes" & _
+    "%22%3A%5B1%5D%2C%22PropertyTypes%22%3A%5B%5D%2C%22RoomsFrom%22%3Anull%2C%22RoomsTo%22%3Anull%2C%22FloorSearchType%22%3A0%2C%" & _
+    "22LivingSpaceFrom%22%3Anull%2C%22LivingSpaceTo%22%3Anull%2C%22PriceFrom%22%3Anull%2C%22PriceTo%22%3Anull%2C%22ComparisPointsMin" & _
+    "%22%3A0%2C%22AdAgeMax%22%3A0%2C%22AdAgeInHoursMax%22%3Anull%2C%22Keyword%22%3A%22%22%2C%22WithImagesOnly%22%3Anull%2C%22WithPoints" & _
+    "Only%22%3Anull%2C%22Radius%22%3Anull%2C%22MinAvailableDate%22%3A%221753-01-01T00%3A00%3A00%22%2C%22MinChangeDate%22%3A%221753-01-01T0" & _
+    "0%3A00%3A00%22%2C%22LocationSearchString%22%3A%22St.%20Gallen%22%2C%22Sort%22%3A11%2C%22HasBalcony%22%3Afalse%2C%22HasTerrace%22%3Afalse%" & _
+    "2C%22HasFireplace%22%3Afalse%2C%22HasDishwasher%22%3Afalse%2C%22HasWashingMachine%22%3Afalse%2C%22HasLift%22%3Afalse%2C%22HasParking%22%3Afalse" & _
+    "%2C%22PetsAllowed%22%3Afalse%2C%22MinergieCertified%22%3Afalse%2C%22WheelchairAccessible%22%3Afalse%2C%2" & _
+    "2LowerLeftLatitude%22%3Anull%2C%22LowerLeftLongitude%22%3Anull%2C%22UpperRightLatitude%22%3Anull%2C%22UpperRightLongitude%22%3Anull%7D&page="
+
+    base_file_path = "C:\temp\data1\Output_"
+    
+    For i = 0 To 83
+        Application.StatusBar = Now & ": Working on Number " & i
+        Debug.Print Now & ": Working on Number " & i
+        
+        file_path = base_file_path & Format$(i, "000") & ".txt"
+        url = base_url & i
+        
+        content = get_html(url)
+        Call write_file(file_path, content)
+        
+        DoEvents
+        Sleep (1600 + (Rnd() * 4000))
+        DoEvents
+    Next i
+        
+    Application.StatusBar = False
+    Debug.Print Now & ": Finished"
+
+End Sub
+
+
+Function get_html(url As String) As String
+    Dim my_html As String
+    With CreateObject("MSXML2.XMLHTTP")
+        .Open "GET", url, False
+        .Send
+        my_html = StrConv(.ResponseText, vbUnicode)
+    End With
+
+    get_html = my_html
+End Function
+
+
+Sub write_file(file_path As String, content As String)
+    Dim fso As Object
+    Set fso = CreateObject("Scripting.FileSystemObject") 'Verweis: Microsoft scripting Runtime
+    
+    Dim oFile As Object
+    Set oFile = fso.CreateTextFile(file_path)
+    
+    oFile.WriteLine content
+    oFile.Close
+    
+    Set fso = Nothing
+    Set oFile = Nothing
+End Sub
