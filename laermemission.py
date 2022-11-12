@@ -12,7 +12,7 @@ from shapely.ops import transform
 from functools import partial
 import pyproj
 
-def emission(longitude, latitude, radius=100.0):
+def emission(latitude, longitude, radius=100.0):
     plz_sg = [9000, 9001, 9004, 9006, 9007, 9008, 9009, 9010, 9011, 9012, 9013, 9014, 9015, 9016, 9020, 9022]
     data_path = "./data/larmemission_SG.csv"
     #gets the street coordinates and connects them to lines
@@ -55,7 +55,6 @@ def emission(longitude, latitude, radius=100.0):
             #gets the laeremmission for all streets in range
             #print(meter_distance)
             #dbs[meter_distance] = [db_tag, db_nacht]
-            print(meter_distance, "and", db_tag)
             db_dist.append(np.max(np.mean([db_tag, db_nacht]) + 20*np.log10(1.2/meter_distance), 0))
             #dbs.append(db_tag)
             #dbs.append(db_nacht)
@@ -65,12 +64,10 @@ def emission(longitude, latitude, radius=100.0):
     #print(f"dbs-> {dbs}")
     #gets the score
     db_dist = np.array(db_dist)
-    print(db_dist)
     if not db_dist.size:
         db_tot = 0
     else:
         db_tot = 10*np.log10((10**(db_dist/10)).sum())
-    print(db_tot)
 
     obergrenze = max(points["Emissionswert (Lre) Tag [dB(A)]"])
     untergrenze = min(points["Emissionswert (Lre) Tag [dB(A)]"])
@@ -83,6 +80,5 @@ def emission(longitude, latitude, radius=100.0):
 
 if __name__ =='__main__':
 
-    res = emission(9.371279099540738,47.42323136334888, 100.0)
+    res = emission(47.42323136334888, 9.371279099540738, 100.0)
     print(f"der score beträgt: {res}")
-    print(emission(9.364279099540738,47.42443136334888, 100.0))

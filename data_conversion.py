@@ -4,12 +4,14 @@ import pandas as pd
 from condition_score import get_condition_score
 from DistanceScore import get_CSV_DistanceScore, calculate_distanceScore
 from kostenschaetzer import cost_estimator
+from laermemission import emission
 
 
 def convert(inp_file, oup_file):
     # Read input datagit 
     inp_data = pd.read_csv(inp_file, sep=',', index_col='id')
     inp_data["renovation"] = None
+    inp_data = inp_data[0:4]
     # Prepare output Dataframe
     oup_header = ["Latitude", "Longitude", "cheapness", "condition", "location", "score"]
     oup_data = pd.DataFrame(index=inp_data.index, columns=oup_header)
@@ -27,8 +29,9 @@ def convert(inp_file, oup_file):
     oup_data["condition"] = inp_data.apply(lambda x: get_condition_score(x["baujahr"], x["renovation"]), axis=1)
     
     # Calculate location score
+    laerm = oup_data.apply(lambda x: emission(x["Latitude"], x["Longitude"]), axis=1)
     distances = oup_data.apply(lambda x: get_CSV_DistanceScore(x["Latitude"], x["Longitude"]), axis=1)
-    oup_data["location"] = calculate_distanceScore(distances)
+    oup_data["location"] = calculate_distanceScore(distances, laerm)
     
     # Calculate overall score
     oup_data["score"] = oup_data.apply(lambda x: get_overall_score(x["cheapness"], x["condition"], x["location"]), axis=1)

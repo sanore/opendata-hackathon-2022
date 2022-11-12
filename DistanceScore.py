@@ -100,12 +100,13 @@ def getMeanDistance(GeoImmo):
     return schnitt
 
 
-def calculate_distanceScore(distances):
+def calculate_distanceScore(distances, laerm):
     minimum = np.min(distances)
     maximum = np.max(distances)
     m = 9 / (maximum - minimum)
     
-    return 10-m*(distances-minimum)
+    dist_score = 10-m*(distances-minimum)
+    return 0.5*dist_score + 0.5*laerm
 
 def get_CSV_DistanceScore(latitude, longitude):
     """
