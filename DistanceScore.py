@@ -8,6 +8,14 @@ Created on Sat Nov 12 10:49:08 2022
 import json
 import requests
 import pandas as pd
+import numpy as np
+
+#Importieren der Point of Interest CSV Daten in Pandas Dataframe
+POI = pd.read_csv('data/POI.csv', sep=';', engine='python', encoding='utf-8-sig', usecols=[0,1,2], index_col=False)
+
+#CSV Gewichtungen importieren und in dict speichern
+Gewichtung = pd.read_csv('data/GewichtungDistanzen.csv', sep=';', engine='python', encoding='utf-8-sig', usecols=[0,1], index_col=False)
+Faktoren = {row[0]: row[1] for index, row in Gewichtung.iterrows()}
 
 def getDistance(GeoStart, GeoZiel):
     """
@@ -69,12 +77,7 @@ def findNearest(GeoImmo, data):
             bez = row['Bezeichnung']
     return near
 
-def getMeanDistance(data_path_POI, data_path_Gewichtung, GeoImmo):
-    #Importieren der Point of Interest CSV Daten in Pandas Dataframe
-    POI = pd.read_csv(data_path_POI, sep=';', engine='python',
-                      encoding='utf-8-sig', usecols=[0,1,2], index_col=False)
-
-
+def getMeanDistance(GeoImmo):
     #Panda Dataframe pro Kategorie erstellen
     GeoKindergarten = POI[POI['Kategorie']=='Kindergarten']
     GeoPrimarschule = POI[POI['Kategorie']=='Primarschule']
@@ -91,18 +94,20 @@ def getMeanDistance(data_path_POI, data_path_Gewichtung, GeoImmo):
     Entfernungen['Supermarkt']=findNearest(GeoImmo, GeoSupermarkt)
     Entfernungen['Bahnhof']=getDistance(GeoImmo, bhf)
 
-    #CSV Gewichtungen importieren und in dict speichern
-    Gewichtung = pd.read_csv(data_path_Gewichtung, sep=';', engine='python',
-                      encoding='utf-8-sig', usecols=[0,1], index_col=False)
-    Faktoren = {row[0]: row[1] for index, row in Gewichtung.iterrows()}
-
     #Durchschnittliche Distanz mit Einbezug der Faktoren
     summe = Faktoren['Kindergarten']*Entfernungen['Kindergarten']+Faktoren['Primarschule']*Entfernungen['Primarschule']+Faktoren['Sekundarschule']*Entfernungen['Sekundarschule']+Faktoren['Supermarkt']*Entfernungen['Supermarkt']+Faktoren['Bahnhof']*Entfernungen['Bahnhof']
     schnitt=summe/(sum(Faktoren.values()))
     return schnitt
 
 
-def get_CSV_DistanceScore(koordinaten, data_path_POI, data_path_Gewichtung):
+def calculate_distanceScore(distances):
+    minimum = np.min(distances)
+    maximum = np.max(distances)
+    m = 9 / (maximum - minimum)
+    
+    return 10-m*(distances-minimum)
+
+def get_CSV_DistanceScore(latitude, longitude):
     """
     Erstellt CSV mit DistanceScore
 
@@ -120,22 +125,9 @@ def get_CSV_DistanceScore(koordinaten, data_path_POI, data_path_Gewichtung):
     None.
 
     """
-    df = pd.DataFrame(columns=['Koordinaten', 'MeanDistance', 'ScoreLage'])
-    for kord in koordinaten['Koordinaten']:
-        md = getMeanDistance(data_path_POI, data_path_Gewichtung, str(kord))
-        # res = pd.DataFrame({'Koordinaten': kord, 'MeanDistance': md})
-        # pd.concat([df, res], ignore_index=True)
-        df = df.append({'Koordinaten': kord, 'MeanDistance': md, 'ScoreLage': 0}, ignore_index=True)
-    print(df)
-    minimum= df['MeanDistance'].min()
-    maximum = df['MeanDistance'].max()
-    m = 9 / (maximum - minimum)
-    print(m)
-    for ind in df.index:
-        df['ScoreLage'][ind]= 10-m*(df['MeanDistance'][ind]-minimum)
+    print("please wait...")
+    return getMeanDistance(f"{latitude},{longitude}")
 
-    df.drop(columns=['MeanDistance'])
-    df.to_csv('DistanceScore.csv')
 
 
 

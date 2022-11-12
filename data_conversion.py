@@ -2,11 +2,12 @@
 import pandas as pd
 
 from condition_score import get_condition_score
+from DistanceScore import get_CSV_DistanceScore, calculate_distanceScore
 from kostenschaetzer import cost_estimator
 
 
 def convert(inp_file, oup_file):
-    # Read input data
+    # Read input datagit 
     inp_data = pd.read_csv(inp_file, sep=',', index_col='id')
     inp_data["renovation"] = None
     # Prepare output Dataframe
@@ -26,17 +27,14 @@ def convert(inp_file, oup_file):
     oup_data["condition"] = inp_data.apply(lambda x: get_condition_score(x["baujahr"], x["renovation"]), axis=1)
     
     # Calculate location score
-    oup_data["location"] = oup_data.apply(lambda x: dummy_location_score(x["Latitude"], x["Longitude"]), axis=1)
+    distances = oup_data.apply(lambda x: get_CSV_DistanceScore(x["Latitude"], x["Longitude"]), axis=1)
+    oup_data["location"] = calculate_distanceScore(distances)
     
     # Calculate overall score
     oup_data["score"] = oup_data.apply(lambda x: get_overall_score(x["cheapness"], x["condition"], x["location"]), axis=1)
     
     # Write DataFrame to csv file
     oup_data.to_csv(oup_file, sep=';')
-
-
-def dummy_location_score(latitude, longitude):
-    return float(int((latitude+longitude) % 10) + 1)
 
 
 def get_overall_score(cheapness_score, condition_score, location_score):
