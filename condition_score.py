@@ -31,7 +31,7 @@ def get_condition_score(constr_year, renov_year):
     city_after[-2:] = np.array([city_after_2000, city_after_2010])
     city_after[:-2] = canton_after[:-2] * (100-city_after[-2:].sum())/canton_after[:-2].sum()
 
-    years = np.arange(1850, 2021)
+    years = np.arange(1850, 2023)
     yearly_percentage = np.zeros_like(years, dtype=float)
     canton_idx = 0
     for idx, year in enumerate(years):
@@ -48,22 +48,21 @@ def get_condition_score(constr_year, renov_year):
     # Calculate score
     if pd.isna(constr_year):
         if renov_year:
-            return int(cum_percentage[int(renov_year)-1850-5] // 10) + 1
+            return round(cum_percentage[int(renov_year)-1850-5] * 0.09 + 1.0, 1)
         else:
             return None
     elif constr_year <= 1850:
-        constr_score = 1
+        constr_score = 1.0
     else:
-        constr_score = int(cum_percentage[int(constr_year)-1850] // 10) + 1
+        constr_score = round(cum_percentage[int(constr_year)-1850] * 0.09 + 1.0, 1)
     
     if pd.isna(renov_year):
         return constr_score
     elif renov_year <= 1850:
-        renov_score = 1
+        renov_score = 1.0
     else:
-        renov_score = int(cum_percentage[int(renov_year)-1850] // 10) + 1
-    
-    return int(0.8*renov_score + 0.2*constr_score)
+        renov_score = round(cum_percentage[int(renov_year)-1850] * 0.09 + 1.0, 1)
+    return round(0.8*renov_score + 0.2*constr_score, 1)
 
 
 if __name__ == "__main__":

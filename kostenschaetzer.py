@@ -7,12 +7,15 @@ MIETPREIS = './data/mietpreise.csv'
 def cost_estimator(mietpreis, flaeche, zimmer, max_score=10):
     frame = pd.read_csv(MIETPREIS, encoding="ANSI", delimiter=';')
     
-    bottom, estimate, top = __price(frame, int(zimmer))
+    try:
+        bottom, estimate, top = __price(frame, int(float(zimmer)))
 
-    m = (-max_score) / (top - bottom)
-    g = max_score - m * bottom
+        m = (-max_score) / (top - bottom)
+        g = max_score - m * bottom
 
-    return np.round(np.clip(g + m * mietpreis, 1, max_score))
+        return np.round(np.clip(g + m * mietpreis, 1, max_score))
+    except:
+        return 1
 
     
 def __price(frame, zimmer):    
