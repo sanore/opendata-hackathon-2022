@@ -31,7 +31,7 @@ def get_condition_score(constr_year, renov_year):
     city_after[-2:] = np.array([city_after_2000, city_after_2010])
     city_after[:-2] = canton_after[:-2] * (100-city_after[-2:].sum())/canton_after[:-2].sum()
 
-    years = np.arange(1850, 2021)
+    years = np.arange(1850, 2023)
     yearly_percentage = np.zeros_like(years, dtype=float)
     canton_idx = 0
     for idx, year in enumerate(years):
