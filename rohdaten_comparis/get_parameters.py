@@ -13,7 +13,9 @@ from bs4 import BeautifulSoup
 import geopandas
 import geopy
 import string
+import time
 
+start_t = time.time()
 
 # Get all files
 offset = r"./02_Objekt-Detail/html_files_v02"
@@ -52,12 +54,10 @@ def __extract(value):
    
 def __parse_value(label, value):
     if label is None:
-        return None
-    
+        return None 
     
     if "zimmer" in label:
         pass
-     
      
     elif "Flaeche" in label:
         return re.sub("\D","",value)
@@ -129,4 +129,5 @@ for file in files:
         
 frame = pd.DataFrame(attributes)    
 frame.to_csv(OUTPUT_FILE)
-    #print(tag)
+
+print(time.time()-start_t)
