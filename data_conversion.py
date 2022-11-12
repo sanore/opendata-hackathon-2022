@@ -11,7 +11,7 @@ def convert(inp_file, oup_file):
     # Read input datagit 
     inp_data = pd.read_csv(inp_file, sep=',', index_col='id')
     inp_data["renovation"] = None
-    inp_data = inp_data[0:4]
+    inp_data = inp_data[0:2]
     # Prepare output Dataframe
     oup_header = ["Latitude", "Longitude", "cheapness", "condition", "location", "score"]
     oup_data = pd.DataFrame(index=inp_data.index, columns=oup_header)
@@ -41,7 +41,15 @@ def convert(inp_file, oup_file):
 
 
 def get_overall_score(cheapness_score, condition_score, location_score):
-    return round(0.5*cheapness_score + 0.3*condition_score + 0.2*location_score, 2)
+    scores = [cheapness_score, condition_score, location_score]
+    weights = [0.5, 0.3, 0.2]
+    weight_sum = 0
+    score_sum = 0
+    for idx, score in enumerate(scores):
+        if pd.notna(score) and score:
+            score_sum += score*weights[idx]
+            weight_sum += weights[idx]
+    return round(score_sum/weight_sum, 2)
 
 
 def latlong_from_gmaps(loc_string):
