@@ -1,0 +1,6 @@
+Warum VBA?
+Verschiedene Scraping Versuche mit Python sind fehlgeschlagen (wurden von comparis.ch geblockt).
+Als fast letzte, kurzfristige Alternative hat der Versuch mit VBA-IE Steuerung halbwegs und dann der Versuch mit VBA-"MSXML2.XMLHTTP" zufriedenstellend funktioniert.
+---
+Download in 2 Teilen erfolgt: 0-419, 500-921
+---

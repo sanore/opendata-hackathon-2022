@@ -1,0 +1,77 @@
+Option Explicit
+Public Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr)
+
+Sub iterate_html()
+    Dim base_url As String
+    Dim file_path As String
+    Dim i As Integer
+    Dim base_file_path As String
+    Dim url As String
+    Dim content As String
+    Dim FileNum As Integer
+    Dim DataLine As String
+    Dim link_file_name As String
+    Dim my_line As String
+    
+    i = 0
+    Application.StatusBar = Now & ": The adventure starts"
+    Debug.Print Now & ": The adventure starts"
+    
+    link_file_name = "C:\Users\david.schneider\OneDrive - OST\Desktop\Comparis_links.txt"
+    base_file_path = "C:\temp\data1\Output_"
+    
+    FileNum = FreeFile()
+    Open link_file_name For Input As #FileNum
+    
+    While Not EOF(FileNum) 'And i < 4
+        Line Input #FileNum, my_line
+        If my_line <> "" Then
+            Application.StatusBar = Now & ": Working on Number " & i
+            Debug.Print Now & ": Working on Number " & i
+            
+            file_path = base_file_path & Format$(i, "000") & ".txt"
+            
+            content = get_html(my_line)
+            Call write_file(file_path, content)
+            
+            DoEvents
+            Sleep (1600 + (Rnd() * 4000))
+            DoEvents
+        End If
+        i = i + 1
+    Wend
+        
+    Application.StatusBar = False
+    Debug.Print Now & ": Finished"
+
+End Sub
+
+
+Function get_html(url As String) As String
+    Dim my_html As String
+    With CreateObject("MSXML2.XMLHTTP")
+        .Open "GET", url, False
+        .Send
+        my_html = StrConv(.ResponseText, vbUnicode)
+    End With
+
+    get_html = my_html
+End Function
+
+
+Sub write_file(file_path As String, content As String)
+    Dim fso As Object
+    Set fso = CreateObject("Scripting.FileSystemObject") 'Verweis: Microsoft scripting Runtime
+    
+    Dim oFile As Object
+    Set oFile = fso.CreateTextFile(file_path)
+    
+    oFile.WriteLine content
+    oFile.Close
+    
+    Set fso = Nothing
+    Set oFile = Nothing
+End Sub
+
+
+
