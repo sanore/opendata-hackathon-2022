@@ -1,6 +1,8 @@
 
 import pandas as pd
 
+from condition_score import get_condition_score
+
 
 def convert(inp_file, oup_file):
     # Read input data
@@ -33,10 +35,6 @@ def convert(inp_file, oup_file):
 
 def dummy_cheapness_score(price, area, room_num):
     return int((price + area + room_num) % 10) + 1
-
-
-def get_condition_score(constr_year, renov_year):
-    return 3
 
 
 def dummy_location_score(latitude, longitude):
