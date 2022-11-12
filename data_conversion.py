@@ -14,27 +14,27 @@ def convert(inp_file, oup_file):
     # Prepare output Dataframe
     oup_header = ["Latitude", "Longitude", "cheapness", "condition", "location", "score"]
     oup_data = pd.DataFrame(index=inp_data.index, columns=oup_header)
-    
+
     # Convert Latitude and Longitude
     # temp = inp_data["Latitude Longitude"].apply(latlong_from_gmaps)
     # temp = temp.apply(pd.Series)
     oup_data["Latitude"] = inp_data["Latitude"]
     oup_data["Longitude"] = inp_data["Longitude"]
-    
+
     # Calculate cheapness score
     oup_data["cheapness"] = inp_data.apply(lambda x: cost_estimator(x["mietpreis"], x["Flaeche"], x["zimmer"]), axis=1)
-    
+
     # Calculate condition score
     oup_data["condition"] = inp_data.apply(lambda x: get_condition_score(x["baujahr"], x["renovation"]), axis=1)
-    
+
     # Calculate location score
     laerm = oup_data.apply(lambda x: emission(x["Latitude"], x["Longitude"]), axis=1)
     distances = oup_data.apply(lambda x: get_CSV_DistanceScore(x["Latitude"], x["Longitude"]), axis=1)
     oup_data["location"] = calculate_distanceScore(distances, laerm)
-    
+
     # Calculate overall score
     oup_data["score"] = oup_data.apply(lambda x: get_overall_score(x["cheapness"], x["condition"], x["location"]), axis=1)
-    
+
     # Write DataFrame to csv file
     oup_data.to_csv(oup_file, sep=';')
 
@@ -64,7 +64,7 @@ def latlong_from_gmaps(loc_string):
 if __name__ == "__main__":
     loc_str = """47°26'07.9"N 9°24'04.6"E"""
     lat, long = latlong_from_gmaps(loc_str)
-    inp = "data/real_estate_listing.csv"
+    inp = "data/0_real_estate_listing.csv"
     oup = "data/data_output.csv"
     
     convert(inp, oup)
