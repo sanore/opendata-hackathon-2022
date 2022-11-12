@@ -22,8 +22,15 @@ offset = r"./02_Objekt-Detail/html_files_v02"
 directory = os.getcwd() + offset
 files = []
 
+for filename in os.listdir(directory):
+    if filename.endswith("txt"): 
+        files.append(filename)
+        continue
+    else:
+        continue
 
-OUTPUT_FILE = './../data/real_estate_listing.csv'
+
+# OUTPUT_FILE = './../data/real_estate_listing.csv'
 SPAN_PATTERN = r"<span>(.*)<\/span>"
 SVG_PATTERN = r"<svg .*>(.*)<\/svg>"
 ADR_PATTERN = r"<span .*>.*<\/span>(.*)<\/h5>"
@@ -57,13 +64,24 @@ def __parse_value(label, value):
         return None 
     
     if "zimmer" in label:
-        pass
+        if value == 'nicht verfügbar':
+            return None
+        else:
+            return float(value)
      
     elif "Flaeche" in label:
         return re.sub("\D","",value)
      
     elif "baujahr" in label:
-        return re.sub("\D","",value)
+        res = re.sub("\D","",value)
+        if res == '':
+            return res
+        else:
+            if int(res) > 2022:
+                return ''
+            else:
+                return res
+        
      
     elif "mietpreis" in label:
         return re.sub("\D","",value)
@@ -76,14 +94,6 @@ def __isSupported(tag):
         return TAGS[tag]
      
     return None
-
-for filename in os.listdir(directory):
-    if filename.endswith("txt"): 
-        #print(os.path.join(directory, filename))
-        files.append(filename)
-        continue
-    else:
-        continue
 
 def __address2Coord(address):
     lines = address.split(",")
@@ -98,8 +108,9 @@ def __address2Coord(address):
    
     return location.latitude, location.longitude
 
-# Output_000-28672701.txt
+
 attributes = []
+i = 0
 for file in files:
     print(f"check {file}")
     with open(os.path.join(offset, file), "rb") as f:
@@ -126,8 +137,14 @@ for file in files:
             result["Longitude"] = lon
         
             attributes.append(result)
-        
-frame = pd.DataFrame(attributes)    
-frame.to_csv(OUTPUT_FILE)
+            
 
-print(time.time()-start_t)
+    if len(attributes) == 100:
+        frame = pd.DataFrame(attributes)
+        frame.to_csv(f'./../data/{i}_real_estate_listing.csv')
+        i += 1
+        attributes = []
+
+print((time.time()-start_t)/60, 'min')
+
+
