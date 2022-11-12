@@ -11,7 +11,6 @@ def convert(inp_file, oup_file):
     # Read input datagit 
     inp_data = pd.read_csv(inp_file, sep=',', index_col='id')
     inp_data["renovation"] = None
-    inp_data = inp_data[0:2]
     # Prepare output Dataframe
     oup_header = ["Latitude", "Longitude", "cheapness", "condition", "location", "score"]
     oup_data = pd.DataFrame(index=inp_data.index, columns=oup_header)
