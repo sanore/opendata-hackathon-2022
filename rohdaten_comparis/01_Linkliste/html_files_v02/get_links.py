@@ -24,11 +24,11 @@ for filename in os.listdir(directory):
     else:
         continue
 
-"""
+
 # Extraxt Links
 for file in files:
-    with open(file) as f:
-        lines = f.readlines()
+    with open(file, "rb") as f:
+        lines = f.read().decode("UTF-16LE").split("\n")
     
     link_lines = []
     links = []
@@ -42,20 +42,6 @@ for file in files:
         for link in string.split('"'):
             if ("details/show" in link):
                 print("https://www.comparis.ch" + link)
-                links.append(link)
-
-"""
-with open("TestFile_000.txt", "rb") as f:
-    xmlstr = f.read().decode("UTF-16LE").split("\n")
-
-
-root = ET.fromstring(xmlstr)
-"""
-for page in list(root):
-    title = page.find('href').text
-    content = page.find('content').text
-    print('href: %s; content: %s' % (title, content))
+                links.append("https://www.comparis.ch" + link)
 
 print(time.time()-start_time)
-
-"""
