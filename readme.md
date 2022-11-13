@@ -2,7 +2,7 @@
 [DevPost](https://opendatahack-stgallen.devpost.com/)
 
 ![Example](./docs/example_few_data.png)
-__Erstellt am 12.11.2022 auf basis der Daten im Ordner `data`__
+_Erstellt am 12.11.2022 auf basis der Daten im Ordner `data`_
 
 # Flat Finder
 Die Stadt St. Gallen hat in ihrer Wohnraum-Strategie festgelegt, dass es wichtig ist auch in Zukunft genügend günstigen Wohnraum in der Stadt zu haben.
@@ -35,3 +35,20 @@ Leider sind wir in dieser kurzen Zeit nicht an genügend Daten gekommen. Deshalb
 Man kann ein Skript implementieren, welches periodisch die aktuellen Wohnungsdaten abfragt. Dabei sollen die alten Daten behalten werden oder gegebenenfalls
 aktualisiert werden. So kann mit der Zeit eine grössere Datenbank aufgebaut werden. Da die Bestimmung des Zustandes einer Wohnung noch nicht sehr aussagekräftig 
 ist, sollte man sie erweitern. Dazu kann man, wie oben erwähnt die Bilder der Wohnungen mit Hilfe einer AI klassifizieren. Dies sollte eine bessere Zustandsermittlung ermöglichen.
+
+# Mitwirkende
+Dieses Projekt wurde im Rahmen des Hackathon der Opendata St. Gallen 2022 umgesetzt. Folgende Personen haben zum Erfolg beigetragen:
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 12.5%;"><a href="https://github.com/selblo"><img src="https://avatars.githubusercontent.com/u/98223614?v=4" height="50px" /></br>Selblo</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/RobinEberle"><img src="https://avatars.githubusercontent.com/u/108194564?v=4" height="50px" /></br>RobinEberle</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/waleedmadi"><img src="https://avatars.githubusercontent.com/u/118048083?v=4" height="50px" /></br>waleedmadi</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/phlehnert"><img src="https://avatars.githubusercontent.com/u/118047993?v=4" height="50px" /></br>phlehnert</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/SilvanAmmann"><img src="https://avatars.githubusercontent.com/u/94677070?v=4" height="50px" /></br>SilvanAmmann</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/selblo"><img src="https://avatars.githubusercontent.com/u/98223614?v=4" height="50px" /></br>Selblo</a></td>
+<td style="width: 12.5%;"><a href="https://github.com/sanore"><img src="https://avatars.githubusercontent.com/u/4846634?v=4" height="50px" /></br>sanore</a></td>
+<td style="width: 12.5%;"><img src="https://www.orthopaediezentrum-am-venet-haus.de/wp-content/uploads/2019/06/foto-unbekannt.jpg" height="50px" /></br>David</td>
+</tr>
+</tbody>
+</table>
