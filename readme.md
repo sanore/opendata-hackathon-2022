@@ -1,6 +1,8 @@
 # Opendata Hackathon St. Gallen
 [DevPost](https://opendatahack-stgallen.devpost.com/)
 
+![Example](./docs/example_few_data.png)
+
 # Flat Finder
 Die Stadt St. Gallen hat in ihrer Wohnraum-Strategie festgelegt, dass es wichtig ist auch in Zukunft genügend günstigen Wohnraum in der Stadt zu haben.
 Es wurde festgestellt, dass günstiger Wohnraum in der Stadt vorhanden ist. Jedoch weiss man nicht genau, wo es günstigen Wohnraum hat und in welchem Zustand er ist.
