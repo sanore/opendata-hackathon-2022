@@ -22,17 +22,22 @@ def convert(inp_file, oup_file):
     oup_data["Longitude"] = inp_data["Longitude"]
 
     # Calculate cheapness score
+    print("process cheapness")
     oup_data["cheapness"] = inp_data.apply(lambda x: cost_estimator(x["mietpreis"], x["Flaeche"], x["zimmer"]), axis=1)
 
     # Calculate condition score
+    print("process condition")
     oup_data["condition"] = inp_data.apply(lambda x: get_condition_score(x["baujahr"], x["renovation"]), axis=1)
 
     # Calculate location score
+    print("process laerm")
     laerm = oup_data.apply(lambda x: emission(x["Latitude"], x["Longitude"]), axis=1)
+    print("process location")
     distances = oup_data.apply(lambda x: get_CSV_DistanceScore(x["Latitude"], x["Longitude"]), axis=1)
     oup_data["location"] = calculate_distanceScore(distances, laerm)
 
     # Calculate overall score
+    print("process score")
     oup_data["score"] = oup_data.apply(lambda x: get_overall_score(x["cheapness"], x["condition"], x["location"]), axis=1)
 
     # Write DataFrame to csv file
